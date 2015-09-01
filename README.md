@@ -43,7 +43,7 @@ The maximum order is the length of the parameter array and the results will be i
 	powerSums = require('power-sums')
 	powerSums([0,1,2], Array(4))	// returns [∑xi, ∑xi^2, ∑xi^3, ∑xi^4] = [3, 5, 9, 17]
 ```
-The array return is the same provided.
+The array returned is the same provided.
 
 If the same result container is used multiple times, the content will be overwritten.
 ```
