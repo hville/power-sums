@@ -35,7 +35,7 @@ With a single exponent, `powerSums(samples, N)` returns a single sum of values r
 	powerSums([1/4, 1/2, 1], -1)	// return 4 + 2 + 1 = 5
 ```
 
-## multiple exponents
+### multiple exponents
 
 The actual use case is to obtain multiple *nth order* sums in a single pass for calculating raw and central moments.
 The maximum order is the length of the parameter array and the results will be inserted in this Array before it is returned.
@@ -64,6 +64,7 @@ If the same result container is used multiple times, the content will be overwri
 ## Test
 
 In node, from the root folder type `npm test`.
+(test is not included with the package and must be obtained from the git repository)
 
 
 ## License
