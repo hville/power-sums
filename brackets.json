@@ -1,0 +1,20 @@
+{
+	"tabSize": 2,
+	"smartIndent": true,
+	"useTabChar": true,
+	"spaceUnits": 2,
+	"wordWrap": true,
+	"insertHintOnTab": true,
+	"sortDirectoriesFirst": true,
+	"highlightMatches": true,
+	"sbruchmann.staticpreview.basepath": "C:/OneDrive/_Code/",
+	"language": {
+		"javascript": {
+			"linting.prefer": [
+				"JSHint",
+				"JSCS"
+			],
+			"linting.usePreferredOnly": true
+		}
+	}
+}
