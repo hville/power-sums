@@ -31,8 +31,8 @@ In node, from the root of your project folder type `npm install --save power-sum
 With a single exponent, `powerSums(samples, N)` returns a single sum of values raised to exponent *N*.
 ```
 	powerSums = require('power-sums')
-	powerSums([0, 1, 2], 2)		// return 0^2 + 1^2 + 2^2 = 5
-	powerSums([1/4, 1/2, 1], -1)		// return 4 + 2 + 1 = 5
+	powerSums([0, 1, 2], 2)	// return 0^2 + 1^2 + 2^2 = 5
+	powerSums([1/4, 1/2, 1], -1)	// return 4 + 2 + 1 = 5
 ```
 
 ## multiple exponents
@@ -40,27 +40,30 @@ With a single exponent, `powerSums(samples, N)` returns a single sum of values r
 The actual use case is to obtain multiple *nth order* sums in a single pass for calculating raw and central moments.
 The maximum order is the length of the parameter array and the results will be inserted in this Array before it is returned.
 ```
-	powerSums([0,1,2], Array(4))		// returns [sum Xi, sumXi.2, sumXi^3, sumsuXi^4] = [3, 5, 9, 17]
+	powerSums = require('power-sums')
+	powerSums([0,1,2], Array(4))	// returns [sum Xi, sumXi.2, sumXi^3, sumsuXi^4] = [3, 5, 9, 17]
 ```
 The array return is the same provided.
 
 If the same result container is used multiple times, the content will be overwritten.
 ```
+	powerSums = require('power-sums')
 	var sums = [9,9,9]
-	powerSums([2,2], sums)		// sums = [4, 8, 16]
+	powerSums([2,2], sums)	// sums = [4, 8, 16]
 ```
 
 ### edge cases
-
-		powerSums([], Array(3)) 		// returns [0, 0, 0]
-		powerSums([0,1,2]) 					// returns the simple sum of 5
-		powerSums([0,1,2], []) 			// returns the empty set []
-
+```
+	powerSums = require('power-sums')
+	powerSums([], Array(3))	// returns [0, 0, 0]
+	powerSums([0,1,2])	// returns the simple sum of 5
+	powerSums([0,1,2], [])	// returns the empty set []
+```
 
 
 ## Test
 
-In node, from the root of your project folder type `npm test`.
+In node, from the root folder type `npm test`.
 
 
 ## License
