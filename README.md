@@ -41,7 +41,7 @@ The actual use case is to obtain multiple *nth order* sums in a single pass for 
 The maximum order is the length of the parameter array and the results will be inserted in this Array before it is returned.
 ```
 	powerSums = require('power-sums')
-	powerSums([0,1,2], Array(4))	// returns [sum Xi, sumXi.2, sumXi^3, sumsuXi^4] = [3, 5, 9, 17]
+	powerSums([0,1,2], Array(4))	// returns [∑xi, ∑xi^2^, ∑xi^3, ∑xi^4] = [3, 5, 9, 17]
 ```
 The array return is the same provided.
 
