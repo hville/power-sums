@@ -1,6 +1,6 @@
 {
   "name": "power-sums",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "sums of array items raised to incremental exponents",
   "author": "Hugo Villeneuve",
   "license": "MIT",
