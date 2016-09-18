@@ -19,7 +19,7 @@ While Kahan summation is used internally to reduce floating point errors,
 [care must be taken](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance)
 if different sums are to be substracted for variance or skew calculations.
 
-For large data sets that are far from the origin (*ie 0 would fall outside the range of values*) the significant order of magnitude between terms will cause significant errors during substractions. (*e.g. ∑ai^2 - ∑ai*)
+For large data sets that are far from the origin (*ie 0 would fall outside the range of values*) the significant order of magnitude between terms will cause significant errors during substractions.
 
 ## Usage
 
