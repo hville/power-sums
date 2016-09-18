@@ -1,6 +1,6 @@
 {
   "name": "power-sums",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "sums of array items raised to incremental exponents",
   "author": "Hugo Villeneuve",
   "license": "MIT",
@@ -22,12 +22,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "tt": "1.0.3",
-    "untap": "0.0.4"
-  },
-  "engines": {
-    "node": ">= 0.10.0",
-    "npm": "2.x"
+    "cotest": "^1.0.1"
   },
   "scripts": {
     "test": "node test.js | untap"
