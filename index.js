@@ -3,7 +3,7 @@ module.exports = sumPower
 /**
  * sum or sums of values raised to one or more exponent
  * @param	 {Array}	arr Samples
- * @param	 {Number|Array} [N=1]	 exponent or target array with length of max exponent
+ * @param	 {Number|Array} [pow=1]	 exponent or target array with length of max exponent
  * @returns {Number} sum
  */
 function sumPower (arr, pow) {
