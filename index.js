@@ -15,6 +15,9 @@ function sumPower (arr, pow) {
 	}
 	throw Error('sumPower called with invalid arguments types')
 }
+// directly exposes some internal methods for convenience
+sumPower[1] = sum1
+sumPower[2] = sum2
 /**
  * sum of all array values with some error correction (modified Kahan sum)
  * @param	 {Array} arr Samples

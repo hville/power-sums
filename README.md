@@ -15,7 +15,8 @@ If a sample array and an array of length N are provided, returns the same array 
 
 ## Limitations
 
-While Kahan summation is used internally to reduce floating point errors,
+While [Kahan summation](https://en.wikipedia.org/wiki/Kahan_summation_algorithm)
+is used internally to reduce floating point errors,
 [care must be taken](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance)
 if different sums are to be substracted for variance or skew calculations.
 
@@ -32,6 +33,15 @@ powerSums = require('power-sums')
 powerSums([0, 1, 2], 2)  // return 0^2 + 1^2 + 2^2 = 5
 powerSums([1/4, 1/2, 1], -1)  // return 4 + 2 + 1 = 5
 ```
+
+The internal methods for the most common cases are also exposed:
+
+```javascript
+powerSums = require('power-sums')
+powerSums[1]([0, 1, 2]) // direct normal sum, with floating point error correction
+powerSums[2]([1/4, 1/2, 1])  // direct normal sum-square, with floating point error correction
+```
+
 
 ### multiple powers
 
