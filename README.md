@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD004 MD007 MD010 MD041 MD022 MD024 MD032 -->
+<!-- markdownlint-disable MD004 MD007 MD010 MD041 MD022 MD024 MD032 MD036 -->
 # power-sums
 
 • [Introduction](#Introduction) • [Limitations](#Limitations) • [Usage](#Usage)  • [Test](#test) • [License](#License) •
@@ -41,7 +41,6 @@ powerSums = require('power-sums')
 powerSums[1]([0, 1, 2]) // direct normal sum, with floating point error correction
 powerSums[2]([1/4, 1/2, 1])  // direct normal sum-square, with floating point error correction
 ```
-
 
 ### multiple powers
 
