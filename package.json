@@ -1,13 +1,19 @@
 {
   "name": "power-sums",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "sums of array items raised to incremental exponents",
   "author": "Hugo Villeneuve",
   "keywords": [
-    "array", "stats",
+    "array",
+    "stats",
     "statistics",
-    "moment", "moments", "raw moment", "raw moments",
-    "sum", "power", "exponent"
+    "moment",
+    "moments",
+    "raw moment",
+    "raw moments",
+    "sum",
+    "power",
+    "exponent"
   ],
   "main": "./index.js",
   "repository": {
@@ -16,14 +22,15 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "cotest": "^1.0.1"
+    "@types/node": "^9.4.0",
+    "cotest": "^3.0.0"
   },
   "scripts": {
     "test": "node test"
   },
   "publishConfig": {
-		"registry": "https://registry.npmjs.org/"
-	},
+    "registry": "https://registry.npmjs.org/"
+  },
   "private": false,
   "license": "MIT"
 }

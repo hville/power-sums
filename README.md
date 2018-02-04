@@ -18,9 +18,7 @@ If a sample array and an array of length N are provided, returns the same array 
 While [Kahan summation](https://en.wikipedia.org/wiki/Kahan_summation_algorithm)
 is used internally to reduce floating point errors,
 [care must be taken](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance)
-if different sums are to be substracted for variance or skew calculations.
-
-For large data sets that are far from the origin (*ie 0 would fall outside the range of values*) the significant order of magnitude between terms will cause significant errors during substractions.
+if different sums are to be substracted for variance or skew calculations (e.g large data sets far from the origin)
 
 ## Usage
 

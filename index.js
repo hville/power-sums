@@ -4,15 +4,15 @@ module.exports = sumPower
  * sum or sums of values raised to one or more exponent
  * @param	 {Array}	arr Samples
  * @param	 {Number|Array} [pow=1]	 exponent or target array with length of max exponent
- * @returns {Number} sum
+ * @returns {Number|Array} sum
  */
 function sumPower (arr, pow) {
 	if (pow === undefined) return sum1(arr)
-	if (pow.constructor === Number) return sumN(arr, pow)
 	if (Array.isArray(pow)) {
 		for (var i = 0; i < pow.length; ++i) pow[i] = sumN(arr, i+1)
 		return pow
 	}
+	if (pow.constructor === Number) return sumN(arr, pow)
 	throw Error('sumPower called with invalid arguments types')
 }
 // directly exposes some internal methods for convenience
@@ -34,7 +34,7 @@ function sum1(arr) {
 /**
  * sum of all array values^2 with some error correction (modified Kahan sum)
  * @param	 {Array} arr Samples
- * @returns {Number} ∑(a[i]^2)
+ * @returns {Number} - ∑(a[i]^2)
  */
 function sum2(arr) {
 	for (var i=0, sum=0, err=0, tot=0; i<arr.length; ++i) {
@@ -48,8 +48,8 @@ function sum2(arr) {
 /**
  * sum of all array values^n with some error correction (modified Kahan sum)
  * @param	 {Array} arr Samples
- *  @param	 {Array} pow Power
- * @returns {Number} ∑(a[i]^n)
+ * @param	 {number} pow Power
+ * @returns {number} - ∑(a[i]^n)
  */
 function sumN(arr, pow) {
 	if (pow === 1) return sum1(arr)
